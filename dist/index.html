@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAGTGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4wLWMwMDAgMTM3LmRhNGE3ZTUsIDIwMjIvMTEvMjctMDk6MzU6MDMgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMzFUMTA6MTM6NDMrMDk6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAyLTEzVDE3OjA1OjU2KzA5OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAyLTEzVDE3OjA1OjU2KzA5OjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmI5NTJjYWJlLTMwZGItMmU0Zi1hYzUzLWExMzg4MjE4Y2NhYiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozNjkxNEE4QzBGQTAxMUU3OUY5MUE3MDg1OThBRDg2QiIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjM2OTE0QThDMEZBMDExRTc5RjkxQTcwODU5OEFEODZCIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjM2OTE0QTg5MEZBMDExRTc5RjkxQTcwODU5OEFEODZCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjM2OTE0QThBMEZBMDExRTc5RjkxQTcwODU5OEFEODZCIi8+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmI5NTJjYWJlLTMwZGItMmU0Zi1hYzUzLWExMzg4MjE4Y2NhYiIgc3RFdnQ6d2hlbj0iMjAyMy0wMi0xM1QxNzowNTo1NiswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8cGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8cmRmOkJhZz4gPHJkZjpsaT54bXAuZGlkOkJEMzYzREYzMEI1NjExRTdBOTEyODMxMzk4QkZGMUIzPC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+r4sW8gAABUhJREFUWIWl13uwllUVBvDfoZNGicigolGIWk5So+NkU5kzUYGaGiZkTopaSjBektGmi8N0Ef8oyHFKC528kTgEAUOk3bOoMMcUddS8zBEzU7whlCCgcqQ/nvVyXj4uh2rNfLPfb797r7X22ut51nq7pk7b7P+Ut+JjGI8PoAu34Kt4sb/N3f+j0eEYh4/jaAxpvXsSm/GmXVH03zjwZqyv54Fy2jH1/BR+iYW4Db21bkQ5tEMZ0I/R/TGxFP8Nv8Jn8DTOkvAfhUMxGb/BMJyHP+NBnLwzAzuKwMk4HaMxtDU/Esfi7/gJbsQdeAs+hVMxFoNbe84txzdsz1BXRxIOwg2lrJFXcTuW40h8WBINXsN9cuoRrT0v4GeYiz/qu5JtpB2Brg7j92BBKXqote69OK3WjcD7ar5Xwj4XS/B8ze9T6/fFtJ05cHwp3Ywv47vYVO/2w8F4QCKxHJfWnpPwD8yTaDRytOTJuDIOL2HGjhyYWOMMXF7Ph+OLZWioZPRC3Ix7y+i8lo5hmIAzBCWNvIpf4+HOCDQ5MBArJJlGYk05dE3NdUov/oAfYSkOwpkSjb1b6/6J+bXuwZobJOj7dzsChwnklpTx0ZiNNwj25+JWgdwpOFA4YAzWYY8OB2+XfFpc+ghkJwpcV+IErG0cGFPj4hq/U8Z7BPfLa34JLsNxpWxsy/i/8FOB5p9azhyBSQLRBtIHYwou75o6bXOXYHmUhHK4JNM6fLBCt5tk/zN4oqX8ncIZmyQ3OllvDH6BN7bmluJq4YaXuiXrz5HCsUqSjr5721/g+CFsLAUzauzBzJbyvSXzl+FO4YzG+G/xLcmdRo7plqQYInd0DD5bL2fXeEMZJ9n8JNZ2nHQUPid4b+gZDqhxnVxZww0n4kKM7cbX8KUOhffhbsHycTW3rIw8Vv+7pAxPxif0Vb/X8HiHA89jtWT/nHIUQcGJQhDfq4Xr8Zd6P6XGR4RQmow+HRfYGuuEqGbiuXJweMuBTXJFp7aiclM33oWr8PU6xSDh8mFllDQXa+rdjUI2bVmKWULbr9TcES0Hnm1F5GX8sH49AyTxFuIQqetzavGnsafUgZ9XtH7cMt5b+z5SvwVl/G34hmR/cy2NAyvKsSWlf2C3cP5fa9NQYS44u8arK3znCXkQSp0ixaeRQ2ruTFuz4WohMng3viJV9WxsaHigu5TuJ7A7VGC0SrD+Sr0/AI/io8JmhEUvEMJqM+IaXIsr5SourbXzcV1F1gDhgfcIO90iEGuSb44w3Gll/HXhjJWSZNPL0c+3jL8obPmOen+FXGEPzhdS2yJNS9Yj1W1uKRovcJpV0bm41i0SnofrBcLNPa/CN4UT5gt8h9QhJknOzJR2bkt/0dSCddILPC2ldC/h9cek+IySluqyWn+hcEIjVwjLDZWQfxK7l75ltf9OyaPfbS8ChDx6K0wEmqQnINzwAN5eJ1VRmoBL8G0hsN2kf3i/0O96KW6rBYJNO7eNA2rzPpJwDWffVeOeNZ6l7ztgcp3wbrnzccIJ0ysaF0nd/0LN3yE5t0U6u+L1tWlQ/T+sNm2o58GlkJDO7Dr9dMH94jLwfUHKD+og4/RxwVayvbZ8QY3HCxpOwv0S0qPkDtdiqtzzQ/i9IOgeuYZLJH/G27pP3EZ29mFyvnRGA6S1Jg3ICknA16XxGCy4Xinl+4xybkJ/xvtz4DbpitoOjJbEWyTYv06aliECyacEfkv7M9zIzr4NZ8lpN+krqyMF9xvltJMkcU8QKD+xq4Z3xYGNUjSG6fugmCchX1TOXCOJtsMvn/7kPyafXMs80iMUAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzQ5ODA2RjMwRkEwMTFFNzgzNEI4NDA1RDFDQzQwOUEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzQ5ODA2RjQwRkEwMTFFNzgzNEI4NDA1RDFDQzQwOUEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozNDk4MDZGMTBGQTAxMUU3ODM0Qjg0MDVEMUNDNDA5QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozNDk4MDZGMjBGQTAxMUU3ODM0Qjg0MDVEMUNDNDA5QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvNUti0AAAEzSURBVHja7Jc9CsIwFMfTD79BHYs3EMFBBMEbeBHdXd0F9QYexMVZQdwE8QIiTg4utUpb/4EWQnnQDk3i4INfKW1Jfkneg1ebMXYCLfBiaqMMbjYubWAzPdEwcbkzfXHnAoZGAYPaehecwQcUcpooHqsDKuILSoAn5RAEwMpJwAd8t/dgkCbgR5PH93lFQI1nEh+Wcly5GFY0dqpAKDHpwiwCSuMnBYqqBZLnUhGqQHrYiVLcgrXkRCQz8wGmkspPLMNjNF/Mla9+DjZgpyMJucDsX4Z/ASFGYAlqqkWaYAE88ARVlWU4BhPQExoSV2UZrkCdOBpfVQ68k42izCaUEvASzzxJq/eJucie0IrEZDSlVhaBLjhIbMtTBXg/0NfZkChtBbiAo1HA4Udw0fl7/hVgAPHfPwAVlW9OAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" sizes="72x72" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDE5RTYxMkMwRkEwMTFFNzg4RkE5NzMwOUI2N0NGQkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDE5RTYxMkQwRkEwMTFFNzg4RkE5NzMwOUI2N0NGQkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0MTlFNjEyQTBGQTAxMUU3ODhGQTk3MzA5QjY3Q0ZCQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0MTlFNjEyQjBGQTAxMUU3ODhGQTk3MzA5QjY3Q0ZCQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtbD8GYAAAPLSURBVHja7JzbbtNAEIbHjhuatBwuSgtFCApSK07lJCSQ+gDwkLwHV1zABeKiKlSi5SAQAgRNAKEGEkpSx8zEv4VzKF6LVNjeGelv2mqp2E+zO7PjHTtEdJd1jnWI1WG1WT6rS6E5VGwL8OmySqwya4LVYG16/OU86yrrAAZ2AMdGQC7giP2SuQuguRgcig2w3YTJnBvzFLVh6wqgpnLY05oCqIWNWa3fhEnLxabcUR5D1uPiIko5ymPIelzcWHhT67ceFy9FriAu9xP5QRuESxn3wADy8VlG+K4gnUn8f5sCEiCfWW9YNYBy8O/djAOSNGYX31eQ951hHR3I//4JkES616x7rKdIDUoxZdn8mKZYl1m38f3YAMmy+shaZT2ER8U3+KwvsciTyvCmZdaSyR8wBbQLL/rC2omyzBxuvDuYQwtzMtqpTa2ENZznlMDBHIy3BTfFOHHPagqvy6J5mEPZdO5uCu/JesQy9SAXcymNE5CTgw15X+ahGfQYAQUFmnewH4DUg9QUkAL6X4CCWJgMFNCwTcQSRfWgETYNGRWZigYoMFg2XsyDrFpingEgKTRJFbHO+kGWPWhMOpkLkA+sF6w11paNgKT0ODnw+zZgCJhN1gbrGYVVResAHRnYrL9RWJyX8uoT1ivWJyyxhm1RzBuISttYSo9ZD1jrrK8Ulid9GxNFAfQe4XsbS+oRvGcN3mS1efCWt1hG65D8/F0PGiGg+0gC69hvrItUSYBW8dnCMgsUSz+gumLQcocCUkAKSAEpoKKG+b+ZnNOkh6OKnyVXapLh1ZGiA5KH+8dZi6xjFN6teYmTvvWApEYk9/gusq6wTlB4R1HuJr6zfYmJ11xg3WLdgAdJzeg5jiWObYCiOzNyoXGWwkuON1krrEuswxi7hXG+bYBOA8JJeMsyltYSllpkTSwx6wBdY52isLFOOg8XWDPU3zfWwKG2aSOgFew5C9iMKyPGCRh5wiHFfOuei12nsCVzOiEfynrbwb5l0rMJcKJxXgxS3s1JA0griAmATB4nx6/z5xloMCAjQHJsSOo49DGuCICi7h/fFJDJpLuIYMY9Dhm1qOekTYZPbtKUO3wkinn3oFTJrpdiXBUJ5CTlux1qhlL0nJgCknPaPHImj/LfUDdPBs10aQAJ8bOsOziaFKElszpOQGUklAepWE29YwPk4I+XbUwUu6SXFfZKbbqmt1xttB6X6IVC+s6gYetxcelPD6facGCqutRfVlXrtyl9sUlCEJMwXxvILPUlb6FJvlcTQBsYpK8JHPGawN8CDABd0vRnOH16SwAAAABJRU5ErkJggg==">
+<link rel="stylesheet" href="https://use.typekit.net/mnr8vqd.css">
+<link rel="apple-touch-icon" sizes="114x114" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAByCAYAAACP3YV9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0JENEJFNTgwRkEwMTFFN0FBN0ZBNDc1Njc1RTM2NkMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0JENEJFNTkwRkEwMTFFN0FBN0ZBNDc1Njc1RTM2NkMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQkQ0QkU1NjBGQTAxMUU3QUE3RkE0NzU2NzVFMzY2QyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozQkQ0QkU1NzBGQTAxMUU3QUE3RkE0NzU2NzVFMzY2QyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuebvBcAAAcrSURBVHja7J17c9NG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">
+
+<title>Alex's Reality</title> 
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i" rel="stylesheet">
+<link href="./assets/style-b57bf9df.css" rel="stylesheet" media="screen">
+<!-- <link href="style.css" rel="stylesheet"> -->
+
+</head>
+<body>
+<div class="animsition">
+  
+
+    <!-- Content CLick Capture-->
+
+    <div class="click-capture"></div>
+    <!-- <div id="mouse-cursor">
+      <div></div>
+    </div> -->
+
+    <!-- Sidebar Menu-->
+
+    <div class="menu"> 
+      <span class="close-menu icon-cross2 right-boxed"></span>
+      <div class="menu-lang right-boxed">
+        <!-- <a href="" class="active">Eng</a>
+        <a href="">Fra</a>
+        <a href="">Ger</a> -->
+      </div>
+      <ul class="menu-list right-boxed">
+        <li class="active">
+          <a  href="index.html">About Alex</a>
+        </li>
+        <li>
+          <a href="works.html">Experience</a>
+          <!-- <ul>
+            <li><a href="works-grid.html">Grid</a></li>
+            <li><a href="works-masonry.html">Masonry</a></li>
+            <li><a href="works-carousel.html">Carousel</a></li>
+            <li><a href="project-detail.html">Project Detail</a></li>
+          </ul> -->
+        </li>
+        <li>
+          <a href="showroom-1.html">Showroom</a>
+          <!-- <ul>
+            <li><a href="news-grid.html">Grid</a></li>
+            <li><a href="news-listing.html">Listing</a></li>
+            <li><a href="news-masonry.html">Masonry</a></li>
+          </ul> -->
+        </li>
+        <li>
+          <a href="#">Recruit</a>
+          <!-- <ul>
+            <li><a href="post-image.html">Image</a></li>
+            <li><a href="post-gallery.html">Gallery</a></li>
+            <li><a href="post-video.html">Video</a></li>
+            <li><a href="post-right-sidebar.html">Right Sidebar</a></li>
+          </ul> -->
+        </li>
+      </ul>
+      <div class="menu-footer right-boxed">
+        <div class="social-list">
+          <!-- <a href="" class="icon ion-social-twitter"></a>
+          <a href="" class="icon ion-social-facebook"></a>
+          <a href="" class="icon ion-social-googleplus"></a>
+          <a href="" class="icon ion-social-linkedin"></a>
+          <a href="" class="icon ion-social-dribbble-outline"></a> -->
+        </div>
+        <div class="copy">
+          <h5 style=" font-family: lft-etica, sans-serif;font-weight: 700; font-size: 3rem; font-style: normal;">Alex's Reality</h5><br>
+          알렉시스리얼리티|주|<br>
+          © Alex's Reality 2023. All Rights Reseverd</div>
+          <div class="copy-contactmom">
+          <div class="copy-contact">
+            <div class="h6">[Adress]</div></div>
+            <div class="copy-contact">
+            서울시 강남구 도곡로 4길 18, 202호</div></div>
+            <div class="copy-contactmom">
+            <div class="copy-contact">
+              <h6>[Contact]</h6></div>
+              <div class="copy-contact">
+                alexsreality@naver.com<br>프로젝트 의뢰는 메일을 보내주시면 성실히 응대해 드리겠습니다. </div></div>
+                <div class="copy-contactmom">
+                <div class="copy-contact">
+                <h6>[Landline]</h6></div>
+                <div class="copy-contact">
+                  02.6949.0133</div></div>
+            
+      </div>
+      
+      
+    </div>
+
+    <!-- Navbar -->
+
+    <header class="navbar navbar-2 navbar-white boxed">
+      <div class="navbar-bg"></div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="brand" href="#">
+        <img class="brand-img" alt="" src="./assets/alexs_logo-97f6b1d3.svg">
+        <div class="brand-info">
+          <div class="brand-name"></div>
+          <div class="brand-text"></div>
+        </div>
+      </a>
+      <address class="navbar-address visible-lg"><span class="text-dark"></span></address>
+      <div class="social-list hidden-xs">
+        <a href="" class="icon ion-social-twitter"></a>
+        <!-- <a href="" class="icon ion-social-facebook"></a>
+        <a href="" class="icon ion-social-googleplus"></a>
+        <a href="" class="icon ion-social-linkedin"></a> -->
+        <a href="" class="icon ion-social-dribbble-outline"></a>
+      </div>
+    </header>
+    <div class="copy-bottom white boxed">© Alex's Reality 2023.</div>
+    <div class="lang-bottom white boxed">
+      <div class="menu-lang">
+        <!-- <a href="" class="active">Eng</a>
+        <a href="">Fra</a>
+        <a href="">Ger</a> -->
+      </div>
+    </div>
+    <div class="pagepiling">
+      <div class="pp-scrollable text-white section section-1">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <iframe id="Main_cube" title="Main_cube" src="./sorce/src_/index.html" frameborder="0"></iframe>
+
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title hidden-xs hidden-sm"><span>ALEX's REALITY</span></div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                          <p class="subtitle-top"><br></p>
+                          <h1 class="display-2 text-white"><span class="text-primary"></span></h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pp-scrollable text-white section section-2">
+        <div class="scroll-wrap">
+          <div class="bg-changer">
+            <div class="section-bg" style="background-image:url(./assets/bg2-2-96205e6f.jpg);"></div>
+            <div class="section-bg" style="background-image:url(./assets/bg2-3-864e53f9.jpg);"></div>
+            <div class="section-bg" style="background-image:url(./assets/bg2-4-3de6cd75.jpg);"></div>
+            <div class="section-bg" style="background-image:url(./assets/bg2-4-3de6cd75.jpg);"></div>
+            <div class="section-bg" style="background-image:url(./assets/bg2-5-5d9035fa.jpg);"></div>
+            <div class="section-bg" style="background-image:url(./assets/bg2-5-5d9035fa.jpg);"></div>
+          </div>
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title hidden-xs hidden-sm"><span>Experience</span></div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h2 class="title-uppercase text-white">latest projects</h2>
+                          <div class="row-project-box row">
+                            <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>수원 농업박람회 미디어체험관 </h5>
+                                  <div class="project-category">Korea Agriculture Show 2022</div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>성남 역사 박물관 디지털 어린이 체험 전시</h5>
+                                  <div class="project-category">Sungnam children's Museum</div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>Office For Fashion Brand Store</h5>
+                                  <div class="project-category">Commercial Design</div>
+                                </div>
+                              </a>
+                            </div> -->
+
+                          </div>
+                          <a href="#" class="h5 link-arrow text-white">view all projects <i class="icon icon-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pp-scrollable section section-3" style="background: #0e0e0e;">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <iframe id="algorithm" title="algorithm" src="./sorce/src/index.html" frameborder="0"></iframe>
+
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title text-dark hidden-xs hidden-sm"><span>Design Algorithm</span></div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pp-scrollable text-white section section-4" style="background: #0e0e0e;">
+        <div class="scroll-wrap">
+          <iframe id="three_cube" title="three_cube" src="./sorce/src_3cube/index.html" frameborder="0"></iframe>
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title hidden-xs hidden-sm"><span>Showroom</span></div>
+                <div class="boxed">
+                  <div class="container">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="pp-scrollable section section-6">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title text-dark hidden-xs hidden-sm"><span>contact</span></div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro overflow-hidden">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h2 class="title-uppercase">enjoy coffee with us</h2>
+                          <div id="map" class="map-2"></div>
+                          <div class="contact-info">
+                            <div class="row-contact-info row">
+                              <div class="col-contact-info col-md-6 col-lg-4">
+                                <div class="row">
+                                  <h3 class="col-sm-3 col-md-4">Write us</h3>
+                                  <div class="col-right col-sm-8 col-md-7 col-sm-offset-1 col-md-offset-1">
+                                    <div class="contact-info-row col-sm-6 col-md-12">
+                                      <strong class="text-dark">head office</strong><br>
+                                      alexsreality@naver.com
+                                    </div>
+                                    <div class="contact-info-row col-sm-6 col-md-12 ">
+                                      <strong class="text-dark">support</strong><br>
+                                      alexsreality@naver.com
+                                    </div>                   
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-contact-info col-md-6 col-lg-4">
+                                <div class="row">
+                                  <h3 class="col-sm-3 col-md-4">call us</h3>
+                                  <div class="col-right col-sm-8 col-md-7 col-sm-offset-1 col-md-offset-1">
+                                    <div class="contact-info-row col-sm-6 col-md-12">
+                                      <strong class="text-dark">head office</strong><br>
+                                      (0043) 568 456 902
+                                    </div>
+                                    <div class="contact-info-row col-sm-6 col-md-12 ">
+                                      <strong class="text-dark">support</strong><br>
+                                      (00232) 568 323 901
+                                    </div>   
+                                  </div>                                   
+                                </div>
+                              </div>
+                              <div class="col-contact-info col-md-6 col-lg-4">
+                                <div class="row">
+                                  <h3 class="col-sm-3 col-md-4">Visit us</h3>
+                                  <div class="col-right col-sm-8 col-md-7 col-sm-offset-1 col-md-offset-1">
+                                    <div class="contact-info-row col-sm-6 col-md-12">
+                                      69 Queen St, Melbourne Australia
+                                    </div>                                   
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+<!-- jQuery -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/animsition.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.pagepiling.js"></script>
+<!-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyCwVuYiM-83l2IdjpT9uC0lg4jBm8-w4j8"></script>  -->
+<!-- <script src="js/gmap.js"></script> -->
+
+
+<!-- Scripts -->
+
+<script src="js/scripts.js"></script> 
+<!-- <script type="module" src="main.js" defer></script> -->
+<!-- <script type="module" src="./sorce/src/script.js"></script> -->
+
+</body>
+</html>

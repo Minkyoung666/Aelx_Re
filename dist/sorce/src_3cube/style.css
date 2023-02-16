@@ -1,0 +1,202 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 0;
+}
+
+
+#Header_name
+{
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    position:relative;
+    left: 10%;
+    top: 7rem;
+    font-family: lft-etica-compresed, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 36px;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    align-items: flex-start;
+    z-index: 10;
+}
+
+
+
+#Header_name span
+{
+    display: flex;
+    text-align: left;
+    position: absolute;
+    font-family: lft-etica-compresed, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 36px;
+    padding-top: 3.2rem;
+    padding-left: 5rem;
+    padding-right: 10%;
+    align-items: flex-start;
+}
+
+.loading-bar
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 6px;
+    background: #6F7BFF;
+    transform: scaleX(0.3);
+    transform-origin: top left;
+    transition: transform 0.5s;
+}
+
+.loading-bar.ended
+{
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+    transition: transform 1.5s ease-in-out;
+}
+
+
+.point
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.point.visible .label
+{
+    transform: scale(1, 1);
+    opacity: 0.1;
+
+}
+
+.point.visible .headlabel
+{
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.point .label
+{
+    position: absolute;
+    top: -15rem;
+    left: -100px;
+    width: 300px;
+    height: 0px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0);
+    font-family: lft-etica-compresed, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 35px;
+    cursor: help;
+    transform: scale(0.8, 0.8);
+    transition: opacity ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+    mix-blend-mode: difference;
+    opacity: 0;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.point .label span
+{
+    font-size: 24px;
+}
+
+.point .headlabel
+{
+    position: absolute;
+    top: -20px;
+    left: -70px;
+    width: 150px;
+    height: 50px;
+    border-radius: 0%;
+    background: rgba(0, 0, 0, 0);
+    font-family: lft-etica-condensed, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+    color: #3325ef;
+    line-height: 50px;
+    cursor: help;
+    transform: scale(0.001, 0.001);
+    transition: transform ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+    mix-blend-mode: difference;
+}
+
+.point .label:hover
+{
+    line-height: 40px;
+    opacity: 1;
+}
+
+.point .headlabel:hover
+{
+    font-size: 27px;
+}
+
+.point .text
+{
+    opacity: 0;
+    position: absolute;
+    top: -350px;
+    left: -135px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: lft-etica-compressed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    line-height: 1.5em;
+    transition: ease-in-out 0.3s;
+    pointer-events: none;
+}
+.point h3
+{
+    line-height: 1em;
+}
+
+.point:hover .text
+{
+    opacity: 1;
+    top: -300px;
+}
