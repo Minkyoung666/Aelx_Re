@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.772" height="68.191" viewBox="0 0 45.772 68.191">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-dasharray: 32 100;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="메뉴아이콘" transform="translate(1 0.5)">
+    <line id="선_25" data-name="선 25" class="cls-1" y2="32" transform="translate(32.072 34.99)"/>
+    <line id="선_31" data-name="선 31" class="cls-1" y2="32" transform="translate(44.072 18.991)"/>
+    <line id="선_27" data-name="선 27" class="cls-1" x2="32" transform="translate(0.072 66.991)"/>
+    <line id="선_28" data-name="선 28" class="cls-1" x2="32" transform="translate(0.072 34.991)"/>
+    <line id="선_29" data-name="선 29" class="cls-1" y1="16" x2="12" transform="translate(32.072 50.991)"/>
+    <line id="선_30" data-name="선 30" class="cls-1" y1="16" x2="12" transform="translate(32.072 18.991)"/>
+    <line id="선_32" data-name="선 32" class="cls-1" y1="16" x2="12" transform="translate(0.072 18.991)"/>
+    <line id="선_26" data-name="선 26" class="cls-1" y2="32" transform="translate(0.072 34.991)"/>
+    <path id="제외_1" data-name="제외 1" class="cls-2" d="M32,33.866H0l12.072-16.1L4.277-1.224h32l7.653,18.991L32,33.866Z" transform="translate(0 1.224)"/>
+    <line id="선_33" data-name="선 33" class="cls-1" x1="32" transform="translate(12.072 18.991)"/>
+  </g>
+</svg>
