@@ -7,25 +7,26 @@ git branch -M main
 git remote add origin https://github.com/Minkyoung666/Aelx_Re.git
 git push -u origin main
 
-{
-  "name": "alexs-reality-web",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "deploy": "vercel --prod",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^4.0.4"
-  },
-  "dependencies": {
-    "gsap": "^3.11.4",
-    "lil-gui": "^0.17.0",
-    "three": "^0.148.0",
-    "vercel": "^28.15.5"
-  }
-}
+# {
+#   "name": "alexs-reality-web",
+#   "private": true,
+#   "version": "0.0.0",
+#   "type": "module",
+#   "scripts": {
+#     "dev": "vite",
+#     "build": "vite build",
+#     "deploy": "vercel --prod",
+#     "preview": "vite preview"
+#   },
+#   "devDependencies": {
+#     "vite": "^4.0.4"
+#   },
+#   "dependencies": {
+#     "gsap": "^3.11.4",
+#     "lil-gui": "^0.17.0",
+#     "three": "^0.148.0",
+#     "vercel": "^28.15.5"
+#   }
+# }
+# node_modules
 node_modules
