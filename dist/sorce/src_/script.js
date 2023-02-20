@@ -1,8 +1,9 @@
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import * as dat from 'lil-gui'
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
-import { AmbientLight, AxesHelper, CubeTexture, CubeTextureLoader, DirectionalLight, EllipseCurve, Mesh, MeshPhysicalMaterial } from 'three'
+import * as THREE from '../../node_modules/three'
+import { OrbitControls } from '../../node_modules/three/examples/jsm/controls/OrbitControls.js'
+import { GLTFLoader } from '../../node_modules/three/examples/jsm/loaders/GLTFLoader.js'
+import { gsap } from '../../node_modules/gsap'
+import * as dat from '../../node_modules/lil-gui'
+import { AmbientLight, AxesHelper, CubeTexture, CubeTextureLoader, DirectionalLight, EllipseCurve, Mesh, MeshPhysicalMaterial } from '../../node_modules/three'
 
 
 
